@@ -12,7 +12,11 @@
   font-family: "Inter", sans-serif;
   list-style-type: none;
 }
-
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
 .heading {
   font-size: 78px;
   font-weight: 900;
