@@ -60,7 +60,6 @@ html {
   margin: 0 auto;
 }
 
-
 header {
   background: linear-gradient(
       180deg,
@@ -69,7 +68,6 @@ header {
     ),
     linear-gradient(360deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
-
 
 .nav-container {
   display: flex;
@@ -100,12 +98,12 @@ header {
   font-size: 18px;
   font-weight: 500;
 }
-.home {
+.first-element {
   background-color: var(--primary-color);
   padding: 8px 15px;
   border-radius: 30px;
 }
-.about {
+.last-element {
   padding: 8px 15px;
 }
 .menu-toggle {
@@ -144,6 +142,7 @@ header {
   background-color: transparent;
   border: 1px solid white;
 }
+
 
 
 .box-1-num {
@@ -212,6 +211,7 @@ main {
   border-radius: 50%;
   margin-bottom: 10px;
 }
+
 
 .section-2-container {
   display: flex;
@@ -384,9 +384,7 @@ main {
   grid-column: span 2;
 }
 
-/*
-!------------------------------------------Section-4---------------------------------
-*/
+
 .section-4-container {
   display: flex;
   flex-direction: column;
@@ -396,6 +394,8 @@ main {
 .section-4-text {
   width: 50%;
 }
+
+
 
 .section-5-container {
   background: rgba(255, 255, 255, 0.144);
@@ -519,113 +519,117 @@ form input {
   right: 20px;
   margin-top: -8px;
 }
-.section-6-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding-bottom: 60px;
-}
-.section-6-text {
-  width: 60%;
-  align-self: center;
-  margin-bottom: 20px;
-}
-.boys-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 300px);
 
-  gap: 20px;
-  background: rgba(255, 255, 255, 0.144);
-  padding: 20px;
-  border-radius: 18px;
-}
-.boy {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-}
-.boy::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.386);
-  top: 0;
-  left: 0;
-  border-radius: 18px;
-  transition: all 0.5s ease;
-}
-.boy:hover::before {
-  background-color: rgba(0, 0, 0, 0);
-}
-.boy img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 18px;
-  transition: all 0.2s ease-in-out;
-}
-.boy:hover img {
-  transform: scale(1.1);
-}
-.info {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-}
+@media (max-width: 577px) {
+
+  .container {
+    max-width: 90%;
+  }
+  .heading {
+    font-size: 35px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .sub-title {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 3vw;
+    padding: 13px 25px;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    color: white;
+  }
+  .nav-elements {
+    display: none;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+  .banner-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .banner-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .banner-paragraph {
+    width: 100%;
+  }
 
 
-footer {
-  background-color: #252525;
+  .section-1-text {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  .circle-container {
+    flex-direction: column;
+  }
+  .circle-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+ 
+
+  .section-2-container {
+    flex-direction: column;
+
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .section-2-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-2-right {
+    width: 100%;
+  }
+  .section-2-btn {
+    align-self: normal;
+    margin-bottom: 10px;
+  }
+  .section-2-text {
+    width: 95%;
+  }
+
+ 
+.section-3-text {
+  width: 90%;
+  
 }
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 0;
-  gap: 30px;
-}
-.footer-up {
-  display: grid;
-  grid-template-columns: 50% repeat(2, 1fr);
-  gap: 30px;
-}
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.footer-logo {
-  font-size: 60px;
-}
-.footer-text {
-  width: 80%;
-  line-height: 25px;
-}
-.footer-right-1,
-.footer-right-2 {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.footer-right-1 ul,
-.footer-right-2 ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 20px;
-  font-weight: 400;
-  cursor: pointer;
-}
-.right-1-title {
-  font-size: 32px;
-  font-weight: 700;
-}
-.footer-down {
-  font-size: 20px;
-  font-weight: 400;
-  margin-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 200px 200px;
+  }
+  .card-2 {
+    grid-column: span 1;
+  }
+  .card-4 {
+    grid-column: span 1;
+  }
+  .card-5 {
+    display: none;
+  }
+  .card-6 {
+    display: none;
+  }
+  .label-4 {
+    top: 10px;
+    left: 20px;
+  }
 }
