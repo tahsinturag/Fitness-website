@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-/*
-!------------------------------------------Common Class----------------------------------
-*/
+
 :root {
   --primary-color: rgb(230, 83, 60);
   --font-1: "Dancing Script", cursive;
@@ -65,9 +63,7 @@ html {
   max-width: 80%;
   margin: 0 auto;
 }
-/*
-!------------------------------------------Header----------------------------------
-*/
+
 header {
   background: linear-gradient(
       180deg,
@@ -76,9 +72,7 @@ header {
     ),
     linear-gradient(360deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
-/*
-!------------------------------------------navber----------------------------------
-*/
+
 
 .nav-container {
   display: flex;
@@ -113,7 +107,9 @@ header {
 .nav-elements li a:hover {
   color: black;
 }
-.first-element {
+
+
+.home {
   background-color: var(--primary-color);
   padding: 8px 15px;
   border-radius: 30px;
@@ -124,9 +120,7 @@ header {
 .menu-toggle {
   display: none;
 }
-/*
-!------------------------------------------Banner----------------------------------
-*/
+
 .span-1 {
   font-family: var(--font-1);
   font-weight: 400;
@@ -165,9 +159,7 @@ header {
   border: 1px solid var(--primary-color);
 }
 
-/*
-!------------------------------------------Box position---------------------------------
-*/
+
 
 .box-1-num {
   font-size: 40px;
@@ -208,9 +200,7 @@ header {
 main {
   background-color: black;
 }
-/*
-!------------------------------------------Section-1----------------------------------
-*/
+
 .section-1-container {
   display: flex;
   flex-direction: column;
@@ -247,9 +237,7 @@ main {
         0px 16px 32px rgba(255, 255, 255, 0.1); 
 }
 
-/*
-!------------------------------------------Section-2----------------------------------
-*/
+
 .section-2-container {
   display: flex;
   background: rgba(255, 255, 255, 0.144);
@@ -282,9 +270,7 @@ main {
   width: 70%;
   margin-bottom: 20px;
 }
-/*
-!------------------------------------------Section-3----------------------------------
-*/
+
 
 .section-3-container {
   display: flex;
@@ -423,9 +409,7 @@ main {
   grid-column: span 2;
 }
 
-/*
-!------------------------------------------Section-4---------------------------------
-*/
+
 .section-4-container {
   display: flex;
   flex-direction: column;
@@ -436,9 +420,7 @@ main {
   width: 50%;
 }
 
-/*
-!------------------------------------------Section-5----------------------------------
-*/
+
 
 .section-5-container {
   background: rgba(255, 255, 255, 0.144);
@@ -567,9 +549,7 @@ form input {
 .section-5-btn {
   align-self: flex-start;
 }
-/*
-!---------------------------------------section-6-----------------------------
-*/
+
 .section-6-container {
   display: flex;
   flex-direction: column;
@@ -626,9 +606,47 @@ form input {
   left: 15px;
 }
 
-/*
-!------------------------------------------Footer---------------------------------
-*/
+/* unique section related styles */
+.section-7-text {
+  align-content: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.fact-description{
+  max-width: 540px;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+  border: 1px solid white;
+  height: 240px;
+  width: 240px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin: 20px 40px;
+  padding: 20px 40px;
+
+}
+
+.fact-number{
+  font-size: 2.8rem; /* 45px */
+  font-weight: 600; /* semibold */
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
 footer {
   background-color: #252525;
 }
@@ -684,10 +702,10 @@ footer {
 }
 
 
+
+
 @media (max-width: 577px) {
-  /*
-!------------------------------------------Common Class----------------------------------
-*/
+ 
   .container {
     max-width: 90%;
   }
@@ -704,7 +722,6 @@ footer {
     font-size: 3vw;
     padding: 13px 25px;
   }
-  /*!----------------------------------navber---------------------*/
   .menu-toggle {
     display: block;
     font-size: 28px;
@@ -713,7 +730,6 @@ footer {
   .nav-elements {
     display: none;
   }
-  /*!--------------------------------------banner--------------------------*/
   .banner-container {
     flex-direction: column;
   }
@@ -742,9 +758,7 @@ footer {
     font-size: 2rem;
   }
 
-  /*
-!------------------------------------------Section-1----------------------------------
-*/
+ 
   .section-1-text {
     width: 100%;
     align-self: center;
@@ -758,9 +772,7 @@ footer {
     margin: 0 auto;
   }
 
-  /*
-!------------------------------------------Section-2----------------------------------
-*/
+  
 
   .section-2-container {
     flex-direction: column;
@@ -787,9 +799,7 @@ footer {
     width: 95%;
   }
 
-  /*
-!------------------------------------------Section-3----------------------------------
-*/
+ 
   .section-3-text {
     width: 90%;
   }
@@ -814,15 +824,10 @@ footer {
     top: 10px;
     left: 20px;
   }
-  /*
-!------------------------------------------Section-4---------------------------------
-*/
+  
   .section-4-text {
     width: 100%;
   }
-  /*
-!------------------------------------------Section-5----------------------------------
-*/
   .section-5-inner-container {
     flex-direction: column;
   }
@@ -837,9 +842,7 @@ footer {
     width: 100%;
     padding: 0 0px;
   }
-  /*
-!------------------------------------------Section-6----------------------------------
-*/
+  
   .section-6-text {
     width: 100%;
     margin-bottom: 20px;
@@ -849,9 +852,22 @@ footer {
     grid-template-rows: repeat(6, 320px);
   }
 
-  /*
-!------------------------------------------Footer---------------------------------
-*/
+
+  .section-7-text {
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+  .facts-container{
+    grid-template-columns: repeat(1,auto);
+    gap: 10px;
+    justify-items:center ;
+}
+#experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
   .footer-up {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
